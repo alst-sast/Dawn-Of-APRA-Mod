@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="The Dawn of APRA — a historical political strategy game set in Peru, 1985–1992.">
+  <title>The Dawn of APRA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">REPUBLIC OF PERU · EXECUTIVE OFFICE</div>
+        <h1>THE DAWN OF APRA</h1>
+        <div class="subtitle">Lima · 1985–1992</div>
+      </div>
+      <div class="top-actions">
+        <button id="saveBtn">Save</button>
+        <button id="loadBtn">Load</button>
+        <button id="newBtn" class="danger">New Game</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar">
+        <section class="panel date-panel">
+          <div class="small-label">PRESIDENTIAL TERM</div>
+          <div id="date" class="date"></div>
+          <div id="days" class="muted"></div>
+        </section>
+
+        <section class="panel">
+          <h2>National Indicators</h2>
+          <div id="stats"></div>
+        </section>
+
+        <section class="panel">
+          <h2>Political Forces</h2>
+          <div id="factions"></div>
+        </section>
+
+        <section class="panel">
+          <h2>Cabinet Briefing</h2>
+          <div id="briefing" class="briefing"></div>
+        </section>
+      </aside>
+
+      <section class="main">
+        <div id="alert" class="alert" aria-live="polite"></div>
+        <article id="eventCard" class="event-card"></article>
+        <section class="log-panel">
+          <div class="section-head">
+            <h2>Executive Record</h2>
+            <span class="muted">Latest decisions</span>
+          </div>
+          <div id="log"></div>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <span>The Dawn of APRA · Original game prototype</span>
+      <span>Historical simulation · v0.1</span>
+    </footer>
+  </div>
+  <script src="src/data/events.js"></script>
+  <script src="src/game.js"></script>
+</body>
+</html>

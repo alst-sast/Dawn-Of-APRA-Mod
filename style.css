@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Roboto+Mono:wght@400;600&display=swap');
+
+:root {
+  --ink:#e9e3d5;
+  --muted:#9c988c;
+  --paper:#171716;
+  --paper2:#201f1c;
+  --line:#403d36;
+  --red:#9d2e2e;
+  --red2:#c04a3e;
+  --green:#718f67;
+  --amber:#b18a4c;
+  --blue:#5e8194;
+  --shadow:rgba(0,0,0,.35);
+}
+* { box-sizing:border-box; }
+body {
+  margin:0; background:#0d0d0c; color:var(--ink);
+  font-family:Roboto Mono, monospace; min-height:100vh;
+}
+button { font:inherit; }
+.topbar {
+  border-bottom:1px solid var(--line); padding:20px 28px;
+  display:flex; justify-content:space-between; gap:20px; align-items:center;
+  background:#11110f;
+}
+.eyebrow,.small-label { font-size:10px; letter-spacing:.16em; color:var(--muted); }
+h1 { margin:5px 0 0; font:700 clamp(25px,4vw,42px) Libre Baskerville,serif; letter-spacing:.02em; }
+.subtitle { color:var(--muted); margin-top:5px; }
+.top-actions { display:flex; flex-wrap:wrap; gap:8px; }
+button {
+  border:1px solid var(--line); color:var(--ink); background:#24231f;
+  padding:9px 13px; cursor:pointer; border-radius:2px;
+}
+button:hover { border-color:#77705f; background:#2c2a25; }
+button:focus-visible { outline:2px solid var(--amber); outline-offset:2px; }
+button.danger { border-color:#713232; }
+.layout { display:grid; grid-template-columns:310px minmax(0,1fr); max-width:1400px; margin:auto; }
+.sidebar { border-right:1px solid var(--line); padding:18px; }
+.main { min-width:0; padding:22px; }
+.panel,.log-panel,.event-card {
+  background:var(--paper); border:1px solid var(--line);
+  box-shadow:0 10px 30px var(--shadow);
+}
+.panel { padding:16px; margin-bottom:14px; }
+.panel h2,.log-panel h2 { margin:0 0 13px; font-size:12px; text-transform:uppercase; letter-spacing:.12em; }
+.date { font:700 27px Libre Baskerville,serif; margin:8px 0 3px; }
+.muted { color:var(--muted); font-size:11px; }
+.stat { margin:13px 0; }
+.stat-top { display:flex; justify-content:space-between; font-size:11px; margin-bottom:5px; }
+.bar { height:7px; background:#302f2b; border:1px solid #45423a; }
+.fill { height:100%; transition:width .3s ease; }
+.fill.normal { background:var(--blue); }
+.fill.good { background:var(--green); }
+.fill.warn { background:var(--amber); }
+.fill.bad { background:var(--red2); }
+.faction { margin:12px 0; }
+.faction-name { display:flex; justify-content:space-between; font-size:11px; margin-bottom:5px; }
+.briefing { font:13px/1.6 Libre Baskerville,serif; color:#c7c0b2; }
+.alert { min-height:0; margin-bottom:12px; }
+.alert.show { border-left:3px solid var(--amber); padding:10px 13px; background:#252219; color:#d7c59e; }
+.event-card { padding:28px; max-width:900px; }
+.event-kicker { color:var(--red2); font-size:11px; letter-spacing:.15em; text-transform:uppercase; }
+.event-card h2 { font:700 clamp(24px,4vw,39px) Libre Baskerville,serif; margin:10px 0 12px; }
+.event-date { color:var(--muted); font-size:11px; }
+.event-text { color:#c9c4b7; font:16px/1.75 Libre Baskerville,serif; max-width:760px; }
+.choices { display:grid; gap:10px; margin-top:24px; }
+.choice {
+  text-align:left; padding:15px; background:#211f1b; border:1px solid #4a463d;
+}
+.choice strong { display:block; color:#eee7d8; margin-bottom:5px; }
+.choice small { color:#a9a296; line-height:1.5; }
+.choice:hover { border-color:var(--red2); }
+.log-panel { margin-top:18px; padding:17px; }
+.log-item { padding:11px 0; border-top:1px solid #2e2c27; font-size:11px; line-height:1.55; }
+.log-item:first-child { border-top:0; }
+.log-date { color:var(--amber); margin-right:10px; }
+.ending { text-align:center; padding:40px 20px; }
+.ending h2 { font:700 32px Libre Baskerville,serif; }
+footer { max-width:1400px; margin:auto; padding:16px 22px 30px; display:flex; justify-content:space-between; color:#656159; font-size:10px; }
+@media (max-width:800px) {
+  .topbar { align-items:flex-start; flex-direction:column; }
+  .layout { display:block; }
+  .sidebar { border-right:0; border-bottom:1px solid var(--line); }
+  .main { padding:14px; }
+  .event-card { padding:20px; }
+  footer { flex-direction:column; gap:5px; }
+}
