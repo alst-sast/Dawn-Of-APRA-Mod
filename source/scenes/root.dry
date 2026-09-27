@@ -1,0 +1,11 @@
+title: Main Menu
+scene-id: root
+is-card: false
+type: menu
+
+= DAWN OF APRA: AN ALTERNATE HISTORY
+
+- @start: Start game
+- @options: Options
+- @changelog: Changelog
+- @credits: Credits
