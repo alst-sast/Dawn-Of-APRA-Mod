@@ -1,0 +1,10 @@
+title: Reassuring the Markets
+scene-id: focus_moderates
+is-card: true
+on-arrival: military_loyalty += 3; reserve_funds += 50
+
+= Meeting with the Confederation of Private Business Associations
+
+García meets privately with industrial leaders and foreign diplomats, promising fiscal restraint and open communication. The markets stabilize slightly, though left-wing APRA factions grumble about compromise.
+
+- @election_night: Fast forward to Election Night (April 14)
