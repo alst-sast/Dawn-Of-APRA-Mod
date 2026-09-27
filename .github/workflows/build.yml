@@ -24,7 +24,7 @@ jobs:
 
       - name: Clone and Install Dendry
         run: |
-          git clone https://github.com/a-different-writer/dendry.git /tmp/dendry
+          git clone https://github.com/auq308/dendry.git /tmp/dendry
           cd /tmp/dendry
           npm install -g .
 
