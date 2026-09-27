@@ -22,9 +22,13 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install Dendry from GitHub
+      - name: Configure Git to Use HTTPS
         run: |
-          npm install -g github:a-different-writer/dendry
+          git config --global url."https://github.com/".insteadOf "git@github.com:"
+
+      - name: Install Dendry via HTTPS
+        run: |
+          npm install -g https://github.com/a-different-writer/dendry.git
 
       - name: Compile Game HTML
         run: |
