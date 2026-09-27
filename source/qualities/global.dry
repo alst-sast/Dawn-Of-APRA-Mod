@@ -1,0 +1,16 @@
+name: Global Qualities
+
+popularity: 70
+popularity_name: Presidential Approval (%)
+
+inflation: 150
+inflation_name: Annualized Inflation (%)
+
+reserve_funds: 1200
+reserve_funds_name: Net Foreign Reserves ($M)
+
+military_loyalty: 55
+military_loyalty_name: Armed Forces Loyalty (%)
+
+insurgency_threat: 65
+insurgency_threat_name: Sendero Luminoso Threat (%)
