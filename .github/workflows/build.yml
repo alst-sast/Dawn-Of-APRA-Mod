@@ -23,8 +23,10 @@ jobs:
           node-version: '18'
 
       - name: Clone and Install Dendry
+        env:
+          GIT_TERMINAL_PROMPT: 0
         run: |
-          git clone https://github.com/auq308/dendry.git /tmp/dendry
+          git clone https://github.com/dendry/dendry.git /tmp/dendry
           cd /tmp/dendry
           npm install -g .
 
