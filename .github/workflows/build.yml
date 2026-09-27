@@ -22,9 +22,9 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install Dendry / Dendrynexus
+      - name: Install Dendry from GitHub
         run: |
-          npm install -g dendrynexus || npm install -g dendry
+          npm install -g github:a-different-writer/dendry
 
       - name: Compile Game HTML
         run: |
