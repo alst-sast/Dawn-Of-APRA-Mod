@@ -1,0 +1,10 @@
+title: The Final Rally
+scene-id: focus_rally
+is-card: true
+on-arrival: popularity += 3; inflation += 5
+
+= Avenida Alfonso Ugarte
+
+Hundreds of thousands of supporters pack the boulevard waving star banners. García delivers a fiery speech promising wage hikes, price controls, and an end to foreign debt exploitation. The crowd roars, but business leaders express alarm over potential hyperinflation.
+
+- @election_night: Fast forward to Election Night (April 14)
